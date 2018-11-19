@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Traumwerk – Impressum</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="rest.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"
+	integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<header id="impressum">
+		<div id="navigation"> <!-- Navigationsleiste mit Logo -->
+			<a href="index.html"><img id="logo" src="assets/bilder/logo.svg" alt="Traumwerk-Logo"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="headerbild impressum">
+			<h1>Impressum</h1>
+		</div>
+	</header>
+
+	<main>
+		<section>
+			<h2>Medieninhaber</h2>
+			<p>Traumwerk – offene werkstätte für angewandte Kunst, D.I.Y. – Experimente und handwerklichen Austausch</p>
+			<p>Zuständige Vereinsbehörde: Bundespolizeidirektion Graz</p>
+			<p>ZVR-Nummer: 602582784</p>
+		</section>
+
+		<section>
+			<h2>Adresse & Kontakt</h2>
+			<p>Lendkai 45 <br>8020 Graz</p>
+			<p><a class="email"></a></p>
+		</section>
+
+		<section>
+			<h2>Vorstand</h2>
+			<p>Obfrau: Nina Botthof <br>
+				Obfrau-Stellvertreter: Paul Pritz <br>
+				Schriftführer: Viktor Adamek <br>
+				Schriftführer-Stellvertreter: Andreas Höfner <br>
+				Kassier: Stefanie Hödlmoser <br>
+				Kassier-Stellvertreter: Viktoria Taucher</p>
+		</section>
+
+		<section>
+			<h2>Kontoverbindung</h2>
+			<p>Bankinstitut: Hypo Vorarlberg <br>
+				Kontoinhaber: Verein Traumwerk <br>
+				Kontonummer: 21487564017 <br>
+				Bankleihzahl: 58000 <br>
+				IBAN: AT335800021487564017 <br>
+				BIC: HYPVAT2B</p>
+		</section>
+
+		<section>
+			<h2>Grundlegendes</h2>
+			<p>Diese Internetpräsenz dient dem Verein Traumwerk, offene Werkstätte für angewandte Kunst, D.I.Y. – Experimente und handwerklichen Austausch, für Informationen über und rund um die Werkstätte.</p>
+			<p>Niemand übernimmt eine Haftung für, von dieser Seite aus verlinkte, andere Internetseiten.</p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2016</p>
+		<div class="social">
+			<p><a href="https://www.facebook.com/verein.traumwerk/">Facebook</a></p>
+			<p><a href="https://twitter.com/TraumwerkGraz">Twitter</a></p>
+		</div>
+		<div class="links">
+			<p><a href="impressum.html">Impressum</a></p>
+		</div>
+	</footer>
+</header>
+<script>
+	/*
+	 * Email address obfuscator
+	 */
+
+	function activateEmail ( selector ) { // define
+	 	s = 'bssvpr@genhzjrex.va' // very safe ROT (9+4) encryption
+		// super short decoder
+	 	p = s.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+
+		$( selector ).html(p)
+		.attr( 'href', 'mailto:' + p)
+ 		.attr( 'target', '_blank' ); // open in a new tab
+ 	}
+
+	activateEmail('.email'); // run it
+</script>
+
+</body>
+</html>

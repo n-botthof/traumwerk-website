@@ -1,0 +1,519 @@
+/* Allgemeine Styles */
+* { 
+	margin: 0;
+	font-family: "Open Sans";
+	text-decoration: none;
+	color: black;
+	box-sizing: border-box;
+}
+
+section {
+	text-align: center;
+	padding: 6em 0;
+}
+
+section:nth-child(even) {
+	background-color: #F2F2F2;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 3em;
+	letter-spacing: 0.2em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+hr {
+	width: 12em;
+	height: 2px;
+	background-color: #ff615d;
+	border: none;
+	margin: 0.8em auto;
+}
+
+p {
+	font-size: 1.1em;
+	margin: 2em;
+}
+
+/* Header */
+header {
+	background-image: url("bilder/hero.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 95vh;
+}
+
+header div {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo {
+	width: 5em;
+	margin: 1em 2em;
+}
+
+nav {
+	margin: 2em;
+	text-transform: uppercase;
+}
+
+nav a {
+	padding: 0.4em 1em;
+}
+
+ul {
+		text-align: center;
+		display: inline;
+		margin: 0;
+		list-style: none;
+}
+
+ul li {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		margin-bottom: 2px;
+}
+
+ul li:hover {
+		border-bottom: solid red 2px;
+		margin-bottom: 0;
+}
+
+ul li ul {
+		padding: 0;
+		position: absolute;
+		display: none;
+		visibility: hidden;
+		margin-left: -0.4em;
+		border: solid 2px;
+		 -webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(red), to(rgba(0, 0, 0, 0))) 1 100%; 
+		 -webkit-border-image: -webkit-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%; 
+		 -moz-border-image: -moz-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%; 
+		 -o-border-image: -o-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%; 
+		  border-image: linear-gradient(to top, red, rgba(0, 0, 0, 0)) 1 100%;
+		border-top: none;
+}
+
+ul li ul li {
+		display: block;
+		background-color: white;
+		width: 100%;
+		padding: 0.4em 0;
+		margin-bottom: 0;
+		border-bottom: solid white 2px;
+}
+
+ul li ul li:nth-child(odd) {
+	background-color: #F2F2F2;
+	border-bottom: solid #F2F2F2 2px;
+}
+
+ul li ul li:nth-child(odd):hover {
+	border-bottom: solid red 2px;
+}
+
+ul li ul li a {
+	padding: 0.1em;
+}
+
+ul li:hover ul {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+}
+
+header #wtf {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 80vh;
+	width: 75%;
+	background: none;
+}
+
+#lgross {
+	height: 30vh;
+	opacity: 0.85;
+}
+
+header p {
+	margin: 1em;
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/* Bereiche */
+
+#bereiche, #titel {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 17vh;
+}
+
+#titel {
+	height: 5vh;
+}
+
+svg {
+	height: 15vh;
+}
+
+.einzeln, .titel {
+	width: 20vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#holz:hover {
+	fill: #C0392B;
+	height: 17vh;
+}
+
+#nahen {
+	height: 11vh;
+}
+
+#nahen:hover {
+	fill: #8E44AD;
+	height: 13vh;
+}
+
+#mechatronik:hover {
+	fill: #3498DB;
+	height: 17vh;
+}
+
+#siebdruck:hover {
+	fill: #2ECC71;
+	height: 17vh;
+}
+
+#topfern:hover {
+	fill: #F39C12;
+	height: 17vh;
+}
+
+/* Projekt */
+
+.filter li {
+	margin: 0 0.3em;
+}
+
+.filter li::before {
+	content: "︎○ ";
+}
+
+.filter li:active::before {
+	content: "● "
+}
+
+.filter li:hover {
+	border: none;
+	color: #ff615d;
+}
+
+
+#projekte {
+	display: inline-block;
+	margin: 2em 0;
+}
+
+.projekt {
+  display: inline-block;
+  float: left;
+}
+
+.image {
+  text-align: center;
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  display: none;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.image:hover .overlay {
+  display: block;
+}
+
+.overlay div{
+  margin: 25% auto;
+}
+
+.overlay div h2 {
+  color: white;
+}
+
+.overlay p {
+  margin: 0.1em;
+  color: white
+}
+
+/* lightbox */
+
+.lightbox {
+  /** Hide the lightbox */
+  display: none;
+
+  /** Apply basic lightbox styling */
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: black;
+  background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox:target {
+  /** Show lightbox when it is target */
+  display: block;
+
+  /** Remove default browser outline style */
+  outline: none;
+}
+
+button {
+	background: #ff615d;
+	border: none;
+	padding: 0.5em 1.2em;
+	font-size: 1.3em;
+	color: #F2F2F2;
+	border-radius: 17px;
+}
+
+/* Termine */
+
+#termine {
+	width: 70%;
+	margin: 4em auto;
+}
+
+.termin {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5em 0;
+}
+
+.datum {
+	background-color: #ff615d;
+	border-radius: 50%;
+	height: 4.5em;
+	width: 4.5em;
+	font-size: 2em;
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+}
+
+.datum p, .datum strong {
+	margin: 0 auto;
+	vertical-align: middle;
+	color: white;
+}
+
+.inhalt {
+	display: inline;
+	width: 80%;
+}
+
+.inhalt h3, .inhalt p, .inhalt hr {
+	margin: 0;
+	text-align: left;
+}
+
+.inhalt h3 {
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	color: #ff615d;
+}
+
+.inhalt hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.5em 0;
+}
+
+.siebdruck .datum, .siebdruck hr {
+	background-color: #2ECC71;
+}
+
+.siebdruck .inhalt h3 {
+	color: #2ECC71;
+}
+
+.holz .datum, .holz hr {
+	background-color: #C0392B;
+}
+
+.holz .inhalt h3 {
+	color: #C0392B;
+}
+
+.mechatronik .datum, .mechatronik hr {
+	background-color: #3498DB;
+}
+
+.mechatronik .inhalt h3 {
+	color: #3498DB;
+}
+
+.nahen .datum, .nahen hr {
+	background-color: #8E44AD;
+}
+
+.nahen .inhalt h3 {
+	color: #8E44AD;
+}
+
+.topfern .datum, .topfern hr {
+	background-color: #F39C12;
+}
+
+.topfern .inhalt h3 {
+	color: #F39C12;
+}
+
+.offene .datum, .offene hr {
+	background-color: #16A085;
+}
+
+.offene .inhalt h3 {
+	color: #16A085;
+}
+
+/* Team */
+
+#side {
+	white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 100%;
+  height: 21em;
+}
+
+#team {
+  width: 150em;
+  height: 21em;
+}
+
+.member {
+  display: inline-block;
+  float: left;
+}
+
+.member .image {
+  text-align: center;
+  position: relative;
+  width: 15em;
+  height: 21em;
+}
+
+.member .overlay div {
+  margin: 40% auto;
+}
+
+/* Sponsoren */
+
+#sponsoren {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-start;
+}
+
+#sponsoren div {
+	display: inline-flex;
+	width: 15%;
+	height: auto;
+}
+
+#sponsoren img {
+	width: 100%;
+}
+
+/* Footer */
+
+footer {
+	background-color: black;
+	color: white;
+	height: 9em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding: 0 1.5em;
+}
+
+footer p {
+	color: white;
+	font-size: 0.8em;
+	margin: 0 0.5em;
+}
+
+footer .social {
+	height: 40%;
+}
+
+footer img {
+	height: 100%;
+	margin: 0 1em;
+}
+
+footer .links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+@media (max-width: 800px) {
+
+  .image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+
+

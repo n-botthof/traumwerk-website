@@ -1,0 +1,17 @@
+13.11.	Siebdruckworkshop	SD	13:00	Paul		ANM
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus est architecto minima cumque vero, soluta perspiciatis amet repellat unde minus magnam velit molestias atque. Magnam necessitatibus ipsum commodi, provident totam voluptates distinctio dolores minus tenetur eum maiores quo hic perferendis, nemo, est doloribus! Consequuntur sed, esse eligendi aut, pariatur magni!
+
+
+25.12.	Offene Werkstatt	OW	17:00	Viktor
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus est architecto minima cumque vero, soluta perspiciatis amet repellat unde minus magnam velit molestias atque. Magnam necessitatibus ipsum commodi, provident totam voluptates distinctio dolores minus tenetur eum maiores quo hic perferendis, nemo, est doloribus! Consequuntur sed, esse eligendi aut, pariatur magni!
+
+
+Kürzel:
+– offene Werkstatt: OW
+– Siebdruckworkshop: SD
+– Nähworkshop: NA
+– Metall: ML
+– Elektronik: ET
+– Keramik: KA
+– Holz: HZ
+– Repaircafé: RC

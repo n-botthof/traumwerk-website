@@ -1,0 +1,69 @@
+h1 {
+	color: white;
+	margin-top: 4rem;
+	text-shadow: 2px 2px 8px black;
+}
+
+section a {
+	color: #ff615d;
+}
+
+#subhead {
+	font-size: 1.3rem;
+}
+
+header {
+	height: 50vh;
+	background-color: #ff615d;
+}
+
+.headerbild {
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.impressum{
+	background-image: url(assets/bilder/header/impressum.jpg);
+}
+
+.siebdruck {
+	background-image: url(assets/bilder/header/siebdruck.jpg);
+}
+
+.holz {
+	background-image: url(assets/bilder/header/holz.jpg);
+}
+
+.textil {
+	background-image: url(assets/bilder/header/textil.jpg);
+}
+
+.elektronik {
+	background-image: url(assets/bilder/header/elektronik.jpg);
+}
+
+.metall {
+	background-image: url(assets/bilder/header/metall.jpg);
+}
+
+.keramik {
+	background-image: url(assets/bilder/header/keramik.jpg);
+}
+
+section ul {
+	text-align: left;
+	width: 20rem;
+	margin: 2rem auto;
+}
+
+@media (max-width: 760px) {
+
+	#navigation ul {
+		display: flex;
+	}
+}

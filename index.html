@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Verein Traumwerk</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+	integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+	crossorigin=""></script>
+	<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"
+	integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+	crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Der Verein Traumwerk betreibt eine öffentliche Werkstatt in Graz. Hier finden Workshops zu den Themen Siebdruck, Keramik, Metall, Holz und Textil statt.">
+</head>
+<body>
+	<header>
+
+		<div id="navigation"> <!-- Navigationsleiste mit Logo -->
+			<a href="index.html"><img id="logo" src="assets/bilder/logo.svg" alt="Traumwerk-Logo"></a>
+			<nav>
+				<ul>
+					<li><a href="#verein">Verein</a></li>
+					<li><a href="#bereiche">Bereiche</a></li>
+					<li><a href="#termine">Termine</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#sponsoren">Unterstützer</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+				<a id="burger-menu" href="#navigation-responsive">&#9776;</a>
+			</nav>
+
+		</div>
+
+		<div id="navigation-responsive">
+			<nav>
+				<ul>
+					<li><a href="#_Home">Home</a></li>
+					<li><a href="#verein">Verein</a></li>
+					<li><a href="#bereiche">Bereiche</a></li>
+					<li><a href="#termine">Termine</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#sponsoren">Unterstützer</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="headerbild">
+			<img id="lgross" src="assets/bilder/lgross.svg" alt="Traumwer-Logo">
+			<p>Das Traumwerk ist eine öffenliche Werkstatt, in welcher Menschen künstlerisch &amp; handwerklich tätig sein können.</p>
+		</div>
+
+	</header>
+
+	<main>
+
+		<section id="verein">
+			<h1>Traumwerk</h1>
+			<p>Der Verein Traumwerk betreibt eine <strong>offene Gemeinschafts-Werkstatt</strong> für Selbermacher*innen in Graz. Wir wollen damit einen offenen Raum bieten, in dem Menschen ihre Fähigkeiten und ihr Wissen austauschen können, um sich gegenseitig zu bereichern.</p>
+			<p>Als <strong>gemeinnütziger, nicht kommerzieller Verein</strong> leben wir vom ehrenamtlichen Engagement unserer Mitglieder*innen, von Sach-, Material- und Geldspenden, sowie teilweise von Förderungen. Die Benützung des Traumwerks ist prinzipiell <strong>kostenlos</strong> – um die Materialkosten decken zu können, freuen wir uns über entsprechende <strong>Spenden.</strong></p>
+		</section>
+
+		<section id="bereiche"> <!-- Bereiche -->
+			<h2>Bereiche</h2>
+			<p>Zu diesen Themen werden regelmäßig kostenlose Workshops veranstaltet.</p>
+			<div id="bereiche-icons">
+				<div class="bereich">
+					<a href="metall.html">
+						<svg class="metall" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg">
+							<clipPath id="a">
+								<path d="M0 0h630v630H0z"/>
+							</clipPath>
+							<path d="M0 0h630v630H0z" fill="none"/>
+							<g clip-path="url(#a)">
+								<path d="M126 177.3h-9.4c-10-.2-18.8-9.5-17.9-19.6.8-8.6 8.4-16 17.3-16.4H174.3c9.8.5 18.1 9.7 17.3 19.6-.8 8.6-8.4 16-17.3 16.4H162v15.9a82.7 82.7 0 0 1 50.7 34.6 82 82 0 0 1 13.4 44.4v312.4c-.2 1.4-.2 2.7-.5 4-1.2 5.3-5 10-9.7 12.2-3.3 1.6-4.3 1.4-7.8 1.8h-126c-3.6-.4-4.6-.2-7.9-1.8-4.8-2.3-8.5-7-9.7-12.2-.3-1.3-.3-2.6-.5-4V272.2a82.9 82.9 0 0 1 62-78.7zm379.4-29V102a19 19 0 0 1 6-13.5L570.7 36c3.5-3 7.9-4.6 12.6-4.6 9.2.6 17.2 8.7 17.3 17.7.1 5.2-2.2 10.3-6 13.8L541.4 110v38.2H554.2l2.3.3A18.4 18.4 0 0 1 571 164l.1 2.4c0 58.7.2 117.3 0 176a49 49 0 0 1-30.2 44 89.5 89.5 0 0 1-12.5 42 70 70 0 0 1-24.8 23.4c-22.2 12.5-48.5 15-73.7 16.1l-6.4.3v116.5a24 24 0 0 1-1.7 7.8 18.2 18.2 0 0 1-8.4 8.4c-3.3 1.6-4.3 1.4-7.9 1.8h-126a24 24 0 0 1-7.8-1.8 18.2 18.2 0 0 1-8.4-8.4c-1.6-3.2-1.4-4.3-1.8-7.8V272.2a83 83 0 0 1 63-79v-15.9H315c-9-.2-17.1-7.5-18-16.4a18.5 18.5 0 0 1 17.4-19.6h58.2c11.7.6 20.7 14 16 25.1a18.6 18.6 0 0 1-16.6 10.9h-11.6v16.1a83 83 0 0 1 58.6 52.4 82 82 0 0 1 4.4 26.4v160a151 151 0 0 0 56.6-9 37.7 37.7 0 0 0 22.5-25.2c1.1-4 1.8-8.2 2.2-12.4a46.8 46.8 0 0 1-29-43.6V166.3c0-1 0-1.3.2-2.4 1-7.7 7.5-14.4 15.4-15.4 1-.2 1.4-.2 2.4-.2zm-360.6 79a46.2 46.2 0 0 0-44.7 45v294.3h90c0-98.2.4-196.4 0-294.6a46.1 46.1 0 0 0-45.3-44.7zm242.7 221.5V272a46.2 46.2 0 0 0-45.4-44.7 46.1 46.1 0 0 0-44.7 45v294.3h90l.1-114.6a16 16 0 0 1 0-3.2zM535 333h-23.4l.1 9.2c.2 7.7 9 13.7 16.4 10.5 4-1.8 6.9-6 7-10.6zm-23.7-36H535V184.3h-23.3c0 37.6-.5 75.1-.4 112.7z" fill-rule="nonzero"/>
+							</g>
+						</svg>
+						<p class="metall">Metall</p>
+					</a>
+				</div>
+				<div class="bereich">
+					<a href="holz.html">
+						<svg class="holz" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4">
+							<path fill="none" d="M0 0h630v630H0z"/>
+							<g fill-rule="nonzero">
+								<path d="M609 83.8l-58.6-75c-5.3-6.7-15-8-21.7-2.7L161.8 291.5l-128.7 100a41.2 41.2 0 0 0-7 58.1l125.5 161.6a41.2 41.2 0 0 0 58.3 7l108.3-84.4a41.2 41.2 0 0 0 7-58.2l-6.1-8 10.7-56.8 48.4-4c7.5-.4 13.6-6.7 14.1-14.2l5.4-53.7 47.4-3.6c7.7-.4 13.4-6.7 14.3-13.7l5.7-56 53.4-8a16 16 0 0 0 13.2-12.9l9.4-60.4 54.6-9.4a15.6 15.6 0 0 0 13-14.6l4-66.5c-.3-3.3-1.2-6.9-3.9-10zM299.2 509.5L190.9 594a10.3 10.3 0 0 1-6.2 2.2 9.5 9.5 0 0 1-8-4L50.5 430.5a9.9 9.9 0 0 1 1.8-14.2l116.4-90.6 56 72 65.2 83.8 10.7 13.7a10.3 10.3 0 0 1-1.5 14.3zm279.2-363.2l-53.3 9c-6.7 1.2-12 6.1-13 12.8l-9.3 60-53.7 8c-7.1 1-12.5 6.7-13.3 13.7L430 305l-48 4.5c-7.5.4-13.6 6.7-14.1 14.2l-5.3 53.7L315 381c-7.1.4-13 5.8-14.2 13l-7.6 41.6-61-78.6-39-50.2L535.3 40.8l45.7 57.7-2.5 47.8z"/>
+								<path d="M146.3 382.5l-62 48.5 93.5 120.3 4 5h10.3l52.5-40.9 9.8-7.6-98.1-125.2h-10zm43.1 144.8L117.5 435l30.7-24 71.4 91.8-30.2 24.6z"/>
+							</g>
+						</svg>
+						<p class="holz">Holz</p>
+					</a>
+				</div>
+				<div class="bereich">
+					<a href="textil.html">
+						<svg class="textil" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4">
+							<path fill="none" d="M0 0h630v630H0z"/>
+							<clipPath id="a">
+								<path serif:id="ArtBoard2" d="M0 0h630v630H0z"/>
+							</clipPath>
+							<g clip-path="url(#a)">
+								<path d="M597.9 446.1h-70.1c-5-42.2-3-79.8-.9-114a689 689 0 0 0 2.1-50.6h3.4v31.3a32 32 0 0 0 31.7 32.5 31.8 31.8 0 0 0 31.7-32.5V180.2a32 32 0 0 0-31.7-32.5 31.8 31.8 0 0 0-31.7 32.5v29.5h-16.5c-3.8-8.5-9.3-16.1-15.2-24.5a78.9 78.9 0 0 0-40.1-29.5v-54.1c0-5.9-4.6-10.6-10.6-10.6s-10.6 4.6-10.6 10.6v47.7c-12.6-3-28.3-3.8-40.6-3.8-27 0-55.8 3.8-86.5 7.6-31.3 4.2-63.4 8-93.7 8-25.8 0-62.5-21.1-74.3-29.1-2.6-1.7-5.5-3-8.9-3H60.8c-8.9.4-18.2 8-18.2 16.9v226c0 8.9 9.3 15.2 18.2 15.2h19.8v59H33.3c-8.8 0-16 9.3-16 18.2v57.8c0 8.9 7.2 16.9 16.1 16.9h564.5c8.9 0 14.8-8 14.8-16.9v-57.8c-.1-8.9-6.4-18.2-14.8-18.2zM562 180.2c0-2.6 1.7-4.2 4.2-4.2 2.6 0 4.2 2.1 4.2 4.2v132.5c0 2.6-1.7 4.2-4.2 4.2a4.2 4.2 0 0 1-4.2-4.2V180.2zm-29.6 50.6v29.5h-4.6c-.9-12.6-2.1-16.9-4.6-29.5h9.2zM76.5 159.1H131c13.1 8.5 53.6 33 87.8 33 32.5 0 65.8-3.8 98-7.6 29.5-3.8 57.8-7.2 82.7-7.2 38.4 0 62.1 8.9 76.4 27.8 24.9 33 22.4 73.4 19 125.4-2.1 34.2-4.2 73.4.4 115.7H348.8c13.1-46.5 35-133.8 8-170.1-23.2-30.8-92.9-41.4-145.3-41.4-28.3 0-64.6 1.7-78.9 16.1-19.8 19.8-25.4 76.9-27 102.1H76.5V159.1zM101.8 387h18.6c8.5 0 15.6-6.7 16.1-15.2.9-38.4 8-86.5 18.2-96.7 3.4-2.6 21.1-8 56.6-8 54.9 0 107.7 11.8 119.9 27.8 16.1 21.1.9 100.5-16.1 151.2H101.8V387zm481.3 118.3H46.9v-25.4h536.2v25.4z" fill-rule="nonzero"/>
+							</g>
+						</svg>
+						<p class="textil">Textil</p>
+					</a>
+				</div>
+				<div class="bereich">
+					<a href="elektronik.html">
+						<svg class="elektronik" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4">
+							<path fill="none" d="M0 0h630v630H0z"/>
+							<clipPath id="a">
+								<path serif:id="ArtBoard3" d="M0 0h630v630H0z"/>
+							</clipPath>
+							<g fill-rule="nonzero" clip-path="url(#a)">
+								<path d="M368 336a50.6 50.6 0 1 0-100.6-9.6c-.5 7.4.6 14.6 3 21.5l-80.7 66.4A16.5 16.5 0 0 0 184 425l-7.1 67.6-69.3 57a37 37 0 0 0-38.1 5.4 37 37 0 0 0-4.8 52.1 34 34 0 0 0 18.2 12.2 37 37 0 0 0 46-45l74-61.3c3.4-2.7 5-6.6 5.8-10.8l7-67.6 74.6-61.4a50.7 50.7 0 0 0 59.9-3c10.1-8.9 16.9-21 18-34.2zm-39.6 7.6a16 16 0 0 1-23-2.3c-3-3-3.7-7.6-3.6-12a15 15 0 0 1 6-11c4.3-3.7 9.5-5 15-3.4 3.4 1 6.2 2.8 8 5.6 3 3 3.7 7.5 3.6 11.9a15 15 0 0 1-6 11.2zm34.3-161a37.5 37.5 0 0 0-18-12.2 37 37 0 0 0-47.2 32.4c-.1 4.3.1 8.8 1.1 12.8L157.5 331l-41.7-3.7a49.8 49.8 0 0 0-35.4-37.6c-15.9-4.6-33.3-1-46 9.3a51.2 51.2 0 0 0-18 34.3 50.6 50.6 0 0 0 82 43.8c6.3-5.1 11-11.5 14.1-18.4l48.6 4.5c4.3.1 8.3-.8 11.8-3.6l145.6-119.9c1.6.4 3.3 1.5 4.8 1.9a37 37 0 0 0 33.9-7 36.4 36.4 0 0 0 5.5-52zM77.1 350.8a16 16 0 0 1-23-2.3c-3-3-3.8-7-3.6-11.9a15 15 0 0 1 6-11.2c4.2-3.6 9.5-4.8 15-3.2 3.4 1 6.1 2.8 8 5.5 5.5 7 4.6 17.5-2.4 23z"/>
+								<path d="M528.7 191.7a37.5 37.5 0 0 0-26.4-39.5 37 37 0 0 0-46.6 43.4l-47.4 38.6a16.5 16.5 0 0 0-5.8 10.8l-13 134.7-33.2 27-51-3.4c-4.3-.1-8.3.8-11.8 3.5l-41 33.5a16.5 16.5 0 0 0-5.9 10.8l-4 39.7c-8 1.6-15.5 5-22 10.3a51.2 51.2 0 0 0-18 34.2 50.6 50.6 0 0 0 82.6 43.8 51.2 51.2 0 0 0 18-34.2 53 53 0 0 0-11.5-36.8 50 50 0 0 0-17-13.3l3.7-34.4 30.5-25.2 50.6 4.4c4.3 0 8.3-.8 11.8-3.6l43.5-36c3.5-2.8 5.1-6.7 5.8-10.8l13-134.6 41.1-34c1.8 1 4.4 1.8 6.3 2.3a41 41 0 0 0 33.9-7c6.5-5.7 13.1-14 13.8-24.2zM269.5 541.6a15 15 0 0 1-6 11.1 16 16 0 0 1-23-2.3c-3-2.9-3.7-7.7-3.6-11.8.2-4.1 2.5-8.5 6-11.2 4.2-3.6 9.5-4.8 15-3.3 3 1 6 3 8 5.6 3 3 3.7 7.5 3.6 11.9zM435.3 64.3a50.6 50.6 0 0 0-82.6-43.8 51.2 51.2 0 0 0-18 34.2c-.6 8 .7 16.1 3.8 23.6L202.1 190.2a37 37 0 0 0-44.6 57.4 37.5 37.5 0 0 0 18.1 12.2 37 37 0 0 0 47.2-32.4c.7-4.2.2-8-1-11.6l137.6-113a51 51 0 0 0 57.9-4.3 51.2 51.2 0 0 0 18-34.2zM395.6 72a16 16 0 0 1-23-2.3c-3-3-3.8-7.5-3.6-11.8a15 15 0 0 1 5.9-11.2c4.3-3.7 9.5-4.9 15-3.3a14 14 0 0 1 8 5.6c3 2.9 3.8 7.6 3.6 11.8-.1 4.1-2.4 8.5-6 11.2z"/>
+								<path d="M613.6 404.6a50.6 50.6 0 0 0-96.7-24.8l-27.4-2.4c-4.3-.2-8.4.8-11.9 3.5l-94 77.5a37 37 0 0 0-46.2 56.5 34 34 0 0 0 18 12.2c11.5 3.3 24 1 33.8-6.9a38.6 38.6 0 0 0 12.8-36l90.5-74.7 22 2a50.6 50.6 0 0 0 81.1 27.3 51.2 51.2 0 0 0 18-34.2zm-39.7 7.7a16 16 0 0 1-23-2.3c-3-3-3.7-7.5-3.6-11.8a15 15 0 0 1 6-11.2c4.2-3.7 9.5-4.9 15-3.3 3.4 1 6 3 8 5.6 3 2.9 3.7 7.5 3.6 11.8a15 15 0 0 1-6 11.2z"/>
+							</g>
+						</svg>
+						<p class="elektronik">Elektronik</p>
+					</a>
+				</div>
+				<div class="bereich">
+					<a href="siebdruck.html">
+						<svg class="siebdruck" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41">
+							<path fill="none" d="M0 0h630v630H0z"/>
+							<clipPath id="a">
+								<path serif:id="ArtBoard4" d="M0 0h630v630H0z"/>
+							</clipPath>
+							<g fill-rule="nonzero" clip-path="url(#a)">
+								<path d="M618.02 271.1l-60.43-60.43 11.92-11.92a18.47 18.47 0 0 0 5.29-12.85 18.2 18.2 0 0 0-5.29-12.85l-34.2-34.2a84.72 84.72 0 0 0-27.68-18.67l-24.25-10.05c-12.34-5.29-21.87-14.72-26.64-26.64l-10.06-24.25c-4.25-10.47-10.47-19.5-18.65-27.68a85.34 85.34 0 0 0-60.74-24.98c-22.8 0-44.26 9.02-60.95 25.19L177.39 160.7 31.86 306.34a85.83 85.83 0 0 0 0 121.8 84.71 84.71 0 0 0 27.68 18.66l24.25 10.05c12.34 5.29 21.87 14.72 26.64 26.64l10.06 24.25c4.25 10.47 10.47 19.49 18.65 27.68l34.2 34.2a18.47 18.47 0 0 0 12.86 5.3c4.77 0 9.02-1.88 12.86-5.3l11.92-11.92 60.43 60.43a18.47 18.47 0 0 0 12.85 5.3c4.77 0 9.02-1.87 12.85-5.3L618.75 296.5a18.4 18.4 0 0 0-.73-25.4zm-453.9 238.92c-4.76-4.76-8.08-10.05-10.88-16.17L143.2 469.6c-8.6-20.94-25.2-37.1-46.13-46.13l-23.74-9.43c-6.11-2.38-11.4-6.12-16.17-10.88-19.48-19.49-19.48-51.42 0-70.9l73.29-73.8 201.3-201.4a49.73 49.73 0 0 1 35.65-14.72 50.44 50.44 0 0 1 35.65 14.72c4.77 4.77 8.09 10.05 10.89 16.17l10.05 24.25c8.6 20.94 25.2 37.11 46.13 46.13l24.25 10.05c6.12 2.39 11.4 6.12 16.17 10.89l21.36 21.35-345.9 346-21.87-21.88zM283.53 580l-48.1-48.1L531.9 235.45l47.99 47.99-296.35 296.55z"/>
+								<path d="M213.67 431.56c-5.7 0-10.47 1.86-14.72 6.11a20.69 20.69 0 0 0-6.11 14.72c0 5.7 2.38 10.47 6.11 14.72a20.68 20.68 0 0 0 14.72 6.12c5.7 0 10.47-1.87 14.72-6.12a20.4 20.4 0 0 0 0-29.02c-3.84-4.67-9.12-6.53-14.72-6.53zm2.28 22.8c-1.04 1.04-3.32 1.04-4.25 0-1.45-1.45-1.45-3.32 0-4.25a3.92 3.92 0 0 1 2.39-1.03c1.03 0 1.45.41 2.38 1.03a3.92 3.92 0 0 1 1.04 2.39 4.9 4.9 0 0 0-1.56 1.86zm236.02-261.3c-5.7 0-10.47 1.86-14.72 6.1a20.4 20.4 0 0 0 0 29.03 20.69 20.69 0 0 0 14.72 6.12c5.7 0 10.47-1.87 14.72-6.12a20.4 20.4 0 0 0 0-29.02c-4.15-3.73-9.43-6.12-14.72-6.12zm2.38 22.8c-1.03 1.03-3.31 1.03-4.25 0-1.45-1.46-1.45-3.32 0-4.25a3.92 3.92 0 0 1 2.39-1.04c.93 0 1.45.41 2.38 1.04.52 1.03.52 2.9-.52 4.24zm-121.37 96.19c-5.7 0-10.47 1.86-14.72 6.11a20.69 20.69 0 0 0-6.12 14.72c0 5.7 1.87 10.47 6.12 14.72a20.69 20.69 0 0 0 14.72 6.11c5.7 0 10.47-1.86 14.71-6.11a20.4 20.4 0 0 0 0-29.02c-3.62-4.67-8.91-6.53-14.71-6.53zm2.48 22.38c-1.03 1.04-3.31 1.04-4.25 0-1.45-1.45-1.45-3.31 0-4.25a3.93 3.93 0 0 1 2.39-1.03c1.03 0 1.45.41 2.38 1.03a3.92 3.92 0 0 1 1.04 2.39c-.73.93-1.14 1.35-1.56 1.86z"/>
+							</g>
+						</svg>
+						<p class="siebdruck">Siebdruck</p>
+					</a>
+				</div>
+				<div class="bereich">
+					<a href="keramik.html">
+						<svg class="keramik" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4">
+							<path fill="none" d="M0 0h630v630H0z"/>
+							<clipPath id="a">
+								<path serif:id="ArtBoard5" d="M0 0h630v630H0z"/>
+							</clipPath>
+							<g fill-rule="nonzero" clip-path="url(#a)">
+								<path d="M503.4 195.8a57.5 57.5 0 0 1-15.4-38.1c0-16.5 7.3-32.3 19.6-44 12.1-9 18-20.1 18-32.3 0-24.4-23.9-42.9-70.4-55.2-37.6-10-87.4-15.3-139.8-15.3-52.4 0-102.2 5.3-139.8 15.3C128 39 104.1 57.5 104.1 81.4c0 11.7 6 21.7 16.5 30.8a60.8 60.8 0 0 1 21.2 45c0 13.8-5.3 27-15.3 38.1a256.8 256.8 0 0 0-65.2 170c0 139.8 114 253.8 253.7 253.8 139.8 0 253.7-114 253.7-253.7a254.8 254.8 0 0 0-65.3-169.6zM314.8 50.6c95.3 0 156.9 18.5 169.6 30.8 0 0-.6.5-1.2.5l-.5-.5a11.6 11.6 0 0 1-3.1 2.5c-19.1 11.7-78 27.6-165.3 27.6-88 0-147.3-16-165.8-28l-2.5-2.6v.5l-.5-.5c12.5-11.2 74-30.3 169.3-30.3zm0 528.6a214 214 0 0 1-214-214c0-53 19.6-103.9 55.2-143a94.9 94.9 0 0 0 23.3-84.3c37 9 84.8 14.3 135 14.3s98-5.3 135-14.3c-1 6.4-2.1 12.7-2.1 19.6 0 23.9 9 46.1 25.5 65.2 35.5 39.2 55.1 90 55.1 143a212.7 212.7 0 0 1-213 213.5z"/>
+								<path d="M427.7 530.5c-4.3 0-8.5-1.7-12.1-4.3a20.1 20.1 0 0 1-3.2-28 210.8 210.8 0 0 0 46.1-133c0-53-19.6-103.9-55.1-143a101.2 101.2 0 0 1-16.5-23.9 20 20 0 0 1 9-26.5 20 20 0 0 1 26.5 9 66 66 0 0 0 10 14.8A254.2 254.2 0 0 1 497.6 365c0 57.7-19 112.3-55.1 157.8-3.2 5.5-9 7.6-14.8 7.6z"/>
+							</g>
+						</svg>
+						<p class="keramik">Keramik</p>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="termine"> <!-- Termine -->
+			<h2>Termine</h2>
+			<p>Zusätzlich zu den regelmäßig stattfindenden Workshops öffnet das Traumwerk <strong>jeden Montag von 17:00 bis 21:00 Uhr</strong> die Pforten für die <strong>Offene Werkstatt.</strong> Hier kann frei gebastelt und gewerkelt werden. Falls du vorbereitete Siebe oder eine Einschulung für bestimmte Maschinen brauchst, melde dich bitte vorher per Mail.</p>
+
+			<div class="termin">
+				<div class="datum">
+					<p><strong>19</strong></p>
+					<p>Nov</p>
+				</div>
+				<div class="inhalt">
+					<h3>Offene Werkstatt</h3>
+					<p>Beginn: <strong>17:00</strong> | Leiter*in: <strong>Alina</strong></p>
+					<hr>
+					<p>Komm vorbei, lern uns kennen, und mach gleich was! Während der offenen Werkstatt kannst du unsere Gerätschaften (nach Einschulung!) für dein Projekt nutzen und an deiner Sache weiterbasteln.</p>
+				</div>
+			</div>
+
+			<div class="termin">
+				<div class="datum">
+					<p><strong>26</strong></p>
+					<p>Nov</p>
+				</div>
+				<div class="inhalt">
+					<h3>Offene Werkstatt</h3>
+					<p>Beginn: <strong>17:00</strong> | Leiter*in: <strong>TBA</strong></p>
+					<hr>
+					<p>Komm vorbei, lern uns kennen, und mach gleich was! Während der offenen Werkstatt kannst du unsere Gerätschaften (nach Einschulung!) für dein Projekt nutzen und an deiner Sache weiterbasteln.</p>
+				</div>
+			</div>
+
+			<div class="termin siebdruck">
+				<div class="datum">
+					<p><strong>30</strong></p>
+					<p>Nov</p>
+				</div>
+				<div class="inhalt">
+					<h3>Siebdruckworkshop</h3>
+					<p>Beginn: <strong>16:30</strong> | Leiter*in: <strong>Lorenz</strong></p>
+					<hr>
+					<p>Bereits ausgebucht! <br>Kommt vorbei und lernt die Welt des Siebdrucks kennen! Drucke dein eigenes Motiv im Rahmen dieses Workshops. Dazu bitte das digitalisierte Motiv (im PDF Format) und das zu Bedruckende (z. B. T-Shirt) mitbringen. Ihr könnt aber auch aus einer Vielzahl von Motiven aus unserer Sammlung wählen. Anmeldung per Mail!</p>
+				</div>
+			</div>
+
+			<div class="termin">
+				<div class="datum">
+					<p><strong>3</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Offene Werkstatt</h3>
+					<p>Beginn: <strong>17:00</strong> | Leiter*in: <strong>TBA</strong></p>
+					<hr>
+					<p>Komm vorbei, lern uns kennen, und mach gleich was! Während der offenen Werkstatt kannst du unsere Gerätschaften (nach Einschulung!) für dein Projekt nutzen und an deiner Sache weiterbasteln.</p>
+				</div>
+			</div>
+
+			<div class="termin">
+				<div class="datum">
+					<p><strong>10</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Offene Werkstatt</h3>
+					<p>Beginn: <strong>17:00</strong> | Leiter*in: <strong>Andreas</strong></p>
+					<hr>
+					<p>Komm vorbei, lern uns kennen, und mach gleich was! Während der offenen Werkstatt kannst du unsere Gerätschaften (nach Einschulung!) für dein Projekt nutzen und an deiner Sache weiterbasteln.</p>
+				</div>
+			</div>
+
+			<div class="termin">
+				<div class="datum">
+					<p><strong>17</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Offene Werkstatt</h3>
+					<p>Beginn: <strong>17:00</strong> | Leiter*in: <strong>Lorenz</strong></p>
+					<hr>
+					<p>Komm vorbei, lern uns kennen, und mach gleich was! Während der offenen Werkstatt kannst du unsere Gerätschaften (nach Einschulung!) für dein Projekt nutzen und an deiner Sache weiterbasteln.</p>
+				</div>
+			</div>
+
+			<div class="termin siebdruck">
+				<div class="datum">
+					<p><strong>21</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Siebdruckworkshop</h3>
+					<p>Beginn: <strong>15:00</strong> | Leiter*in: <strong>Paul</strong></p>
+					<hr>
+					<p>Bereits ausgebucht! <br>Kommt vorbei und lernt die Welt des Siebdrucks kennen! Drucke dein eigenes Motiv im Rahmen dieses Workshops. Dazu bitte das digitalisierte Motiv (im PDF Format) und das zu Bedruckende (z. B. T-Shirt) mitbringen. Ihr könnt aber auch aus einer Vielzahl von Motiven aus unserer Sammlung wählen. Anmeldung per Mail!</p>
+				</div>
+			</div>
+
+<!-- 			<div class="termin holz">
+				<div class="datum">
+					<p><strong>1</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Panflötenworkshop</h3>
+					<p>Beginn: <strong>13:00</strong> | Leiter: <strong>Paul</strong></p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae odit aspernatur sint hic suscipit, debitis ducimus, enim, voluptate labore optio. Modi eius sint ipsum deserunt, tempore ex ad maiores provident. Recusandae atque at minima quod placeat quibusdam qui consequatur distinctio provident corporis cupiditate exercitationem, architecto repudiandae aperiam modi nam!</p>
+				</div>
+			</div>
+
+			<div class="termin keramik">
+				<div class="datum">
+					<p><strong>1</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Töpferworkshop</h3>
+					<p>Beginn: <strong>13:00</strong> | Leiter: <strong>Paul</strong></p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae odit aspernatur sint hic suscipit, debitis ducimus, enim, voluptate labore optio. Modi eius sint ipsum deserunt, tempore ex ad maiores provident. Recusandae atque at minima quod placeat quibusdam qui consequatur distinctio provident corporis cupiditate exercitationem, architecto repudiandae aperiam modi nam!</p>
+				</div>
+			</div>
+
+			<div class="termin elektronik">
+				<div class="datum">
+					<p><strong>1</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Arduinoworkshop</h3>
+					<p>Beginn: <strong>13:00</strong> | Leiter: <strong>Paul</strong></p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae odit aspernatur sint hic suscipit, debitis ducimus, enim, voluptate labore optio. Modi eius sint ipsum deserunt, tempore ex ad maiores provident. Recusandae atque at minima quod placeat quibusdam qui consequatur distinctio provident corporis cupiditate exercitationem, architecto repudiandae aperiam modi nam!</p>
+				</div>
+			</div>
+
+			<div class="termin textil">
+				<div class="datum">
+					<p><strong>1</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Nähworkshop</h3>
+					<p>Beginn: <strong>13:00</strong> | Leiter: <strong>Paul</strong></p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae odit aspernatur sint hic suscipit, debitis ducimus, enim, voluptate labore optio. Modi eius sint ipsum deserunt, tempore ex ad maiores provident. Recusandae atque at minima quod placeat quibusdam qui consequatur distinctio provident corporis cupiditate exercitationem, architecto repudiandae aperiam modi nam!</p>
+				</div>
+			</div>
+
+			<div class="termin metall">
+				<div class="datum">
+					<p><strong>1</strong></p>
+					<p>Dez</p>
+				</div>
+				<div class="inhalt">
+					<h3>Schweißworkshop</h3>
+					<p>Beginn: <strong>13:00</strong> | Leiter: <strong>Paul</strong></p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae odit aspernatur sint hic suscipit, debitis ducimus, enim, voluptate labore optio. Modi eius sint ipsum deserunt, tempore ex ad maiores provident. Recusandae atque at minima quod placeat quibusdam qui consequatur distinctio provident corporis cupiditate exercitationem, architecto repudiandae aperiam modi nam!</p>
+				</div>
+			</div> -->
+
+		</section>
+
+		<section id="team"> <!-- Team -->
+			<h2>Team</h2>
+			<p>Unser Team besteht aus engagierten, kompetenten und netten Leuten, die sich ehrenamtlich für das Traumwerk einsetzen und euch gerne bei Projekten und Anliegen helfen.</p>
+
+			<div id="side">
+				<div id="team-mitglieder">
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/nina.jpg" alt="">
+						</div>
+						<h4>Nina</h4>
+						<p>Bereiche: <strong>Siebdruck, Textil</strong></p>
+						<p>Als Grafik- & Modedesignerin hat Nina besonders viel Erfahrung im Siebdruck und kann dir beim Nähen mit viel Wissen helfen.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/steffi.jpg" alt="">
+						</div>
+						<h4>Steffi</h4>
+						<p>Bereiche: <strong>Siebdruck, Nähen, Holz</strong></p>
+						<p>Stefanie Hödlmoser ist selbstständige Produktdesignerin, Grafikdesignerin, Illustratorin und Künstlerin in Graz.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/paul.jpg" alt="">
+						</div>
+						<h4>Paul</h4>
+						<p>Bereiche: <strong>Siebdruck, Elektronik, Metall, Holz</strong></p>
+						<p>Paul ist ein waherer Allrounder. Außerdem ist er Universitäts-Assistent für Architektur an der TU Graz.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/andi.jpg" alt="">
+						</div>
+						<h4>Andi</h4>
+						<p>Bereiche: <strong>Elektronik</strong></p>
+						<p>Neben den allgemeinen Tätigkeiten organisiert Andi das Repair Cafe Graz, welches ca. alle 2 Monate im Traumwerk/Spektral stattfindet.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/philipp.jpg" alt="">
+						</div>
+						<h4>Philipp</h4>
+						<p>Bereiche: <strong>Metall, Elektronik, Holz</strong></p>
+						<p>Von Schweißgerät und Drehmaschine zu Laubsäge und Lötkolben hat Philipp immer eine Idee.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/vicky.jpg" alt="">
+						</div>
+						<h4>Vicky</h4>
+						<p>Bereiche: <strong>Siebdruck, Textil</strong></p>
+						<p>Viktoria Taucher unterrichtet Textiles Gestalten und Bildnerische Erziehung. Sie ist außerdem freischaffend als Künstlerin tätig.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/generic.jpg" alt="">
+						</div>
+						<h4>Lorenz</h4>
+						<p>Bereiche: <strong>Siebdruck, Textil, Holz</strong></p>
+						<p>Lorenz ist Expterte in Siebdruck und textiler Gestaltung, hilft aber auch gerne in anderen Bereichen aus.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/generic.jpg" alt="">
+						</div>
+						<h4>Viktor</h4>
+						<p>Bereiche: <strong>Metall, Holz, Elektronik</strong></p>
+						<p>Viktor ist in fast jedem Bereich tätig. Er ist erster Ansprechpartner, wenn es um den korrekten Umgang mit Maschifnen geht.</p>
+					</div>
+
+					<div class="mitglied">
+						<div class="bild">
+							<img src="assets/bilder/team/generic.jpg" alt="">
+						</div>
+						<h4>Aspi</h4>
+						<p>Bereiche: <strong>Holz, Elektronik</strong></p>
+						<p>Aspi ist gerne bei Reparaturen behilflich.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="sponsoren"> <!-- Sponsoren -->
+			<h2>Unterstützer</h2>
+			<p>Vielen Dank an unsere Unterstützer, die mittels finanzieller und sachlicher Spenden zum Erhalt unseres Vereins beitragen.</p>
+			<div id="sponsoren-logos">
+				<div>
+					<a href="https://bouncingbytes.at/">
+						<img src="assets/bilder/sponsoren/bb.png" alt="Bouncing Bytes">
+					</a>
+				</div>
+				<div>
+					<a href="https://at.gedore.com/de/">
+						<img src="assets/bilder/sponsoren/gedore.jpg" alt="Gedore">
+					</a>
+				</div>
+				<div>
+					<a href="http://www.bohler.de/de/index.php">
+						<img src="assets/bilder/sponsoren/boehler.jpg" alt="Böhler">
+					</a>
+				</div>
+				<div>
+					<a href="https://www.odoerfer.com">
+						<img src="assets/bilder/sponsoren/odoerfer.jpg" alt="Odörfer">
+					</a>
+				</div>
+				<div>
+					<a href="https://https://www.cht.com/cht/web.nsf/id/pa_de_startseite.html">
+						<img src="assets/bilder/sponsoren/cht.jpg" alt="CHT Bezema">
+					</a>
+				</div>
+				<div>
+					<a href="http://kultur.graz.at">
+						<img src="assets/bilder/sponsoren/graz-kultur.jpg" alt="Graz Kultur">
+					</a>
+				</div>
+				<div>
+					<a href="https://www.tyrolit.at">
+						<img src="assets/bilder/sponsoren/tyrolit.svg" alt="Tyrolit">
+					</a>
+				</div>
+				<div>
+					<a href="http://www.kalk.wup.at">
+						<img src="assets/bilder/sponsoren/wupkalk.png" alt="W und P">
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="kontakt"> <!-- Kontakt -->
+			<h2>Kontakt</h2>
+			<p>Hast du Projektideen, Anliegen oder Fragen? Dann schick uns eine E-Mail an <a class="email"></a>, kontaktiere uns über <a href="https://www.facebook.com/verein.traumwerk/">Facebook</a> oder schau persönlich bei der Offenen Werkstatt vorbei. Wir freuen uns über jede Nachricht!</p>
+			<div id="map-wrap">
+				<div id="osm-map">
+				</div>
+				<div id="kontaktdaten">
+					<h3>Adresse</h3>
+					<p>Traumwerk <br>Lendkai 45 <br>8020 Graz</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy; 2018</p>
+		<div class="social">
+			<p><a href="https://www.facebook.com/verein.traumwerk/">Facebook</a></p>
+			<p><a href="https://twitter.com/TraumwerkGraz">Twitter</a></p>
+		</div>
+		<div class="links">
+			<p><a href="impressum.html">Impressum</a></p>
+		</div>
+	</footer>
+</body>
+
+<script>
+	// Where you want to render the map.
+	var element = document.getElementById('osm-map');
+
+	// Create Leaflet map on map element.
+	var map = L.map(element);
+
+	// Add OSM tile leayer to the Leaflet map.
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	// Target's GPS coordinates.
+	var target = L.latLng('47.0753483', '15.4331565');
+
+	// Set map's center to target with zoom 18.
+	map.setView(target, 18);
+
+	// Place a marker on the same location.
+	var marker = L.marker(target).addTo(map);
+
+	marker.bindPopup("<b>Traumwerk</b><br />Lendkai 45 <br />8020 Graz").openPopup();
+
+	/*
+	 * Email address obfuscator
+	 */
+
+	function activateEmail ( selector ) { // define
+	 	s = 'bssvpr@genhzjrex.va' // very safe ROT (9+4) encryption
+		// super short decoder
+	 	p = s.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+
+		$( selector ).html(p)
+		.attr( 'href', 'mailto:' + p)
+ 		.attr( 'target', '_blank' ); // open in a new tab
+ 	}
+
+	activateEmail('.email'); // run it
+
+</script>
+</html>

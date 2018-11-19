@@ -1,0 +1,636 @@
+/*--- Allgemeine Styles ---*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+	text-decoration: none;
+	color: black;
+	box-sizing: border-box;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+section {
+	text-align: center;
+	padding: 6rem 0;
+}
+
+section:nth-child(even) {
+	background-color: #F2F2F2;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 3rem;
+	letter-spacing: 0.2rem;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+h2:after, h1:after {
+	position: relative;
+	display: block;
+	margin: 0.5rem auto;
+	height: 0.1rem;
+	content: " ";
+	text-shadow: none;
+	background-color: #ff615d;
+	width: 12rem;
+}
+
+h3 {
+	font-size: 2rem;
+	hyphens: auto;
+	line-height: 1.1;
+}
+
+h4 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h4:after {
+	position: relative;
+	display: block;
+	margin: 0.5rem auto;
+	height: 0.1rem;
+	content: " ";
+	text-shadow: none;
+	background-color: #ff615d;
+	width: 8rem;
+}
+
+p {
+	font-size: 1rem;
+	margin: 2rem;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+section>p {
+	width: 50rem;
+	max-width: 90%;
+	margin: 2rem auto;
+}
+
+
+
+/*--- Header ---*/
+
+header {
+	height: 100vh;
+	background-color: #ff615d;
+}
+
+#headerbild {
+	background-image: url("assets/bilder/hero.jpg");
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#headerbild p {
+	font-size: 1.5rem;
+	color: white;
+	width: 50rem;
+	max-width: 90%;
+	text-align: center;
+	text-shadow: 2px 2px 8px black;
+}
+
+#lgross {
+	height: 30vh;
+	opacity: 0.85;
+	margin-top: 15vh;
+}
+
+@media (max-width: 414px) {
+	#headerbild p {
+		font-size: 1.2rem;
+	}
+}
+/*--- Navigation ---*/
+
+#navigation {
+	width: 100vw;
+	background-color: white;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+}
+
+#logo {
+	width: 5rem;
+	margin: 1rem 2rem;
+}
+
+nav {
+	margin: 2rem;
+	text-transform: uppercase;
+}
+
+nav ul {
+	text-align: center;
+	display: inline;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 2px;
+}
+
+nav ul li:hover {
+	border-bottom: solid #ff615d 2px;
+	margin-bottom: 0;
+}
+
+nav a {
+	padding: 0.4rem 1rem;
+}
+
+@media (max-width: 850px) {
+
+	#logo {
+		width: 4rem;
+		margin: 1rem 1.5rem;
+	}
+
+	nav {
+		margin: 1rem;
+	}
+}
+
+/*--- Responsive Menu ---*/
+
+nav #burger-menu {
+	display: none;
+}
+
+#navigation-responsive {
+	background-color: white;
+	opacity: 0.9;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 11;
+	display: none;
+}
+
+#navigation-responsive:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+#navigation-responsive ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#navigation-responsive ul li {
+	margin: 1rem auto;
+}
+
+#navigation-responsive ul li:hover {
+	border-bottom: none;
+}
+
+#navigation-responsive a {
+	font-size: 2rem;
+}
+
+
+@media (max-width: 785px) {
+
+	nav #burger-menu {
+		display: inline;
+		font-size: 2rem;
+	}
+
+	#navigation ul {
+		display: none;
+	}
+}
+
+
+/*--- Bereiche ---*/
+
+#bereiche-icons {
+	width: 60rem;
+	max-width: 95vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4rem;
+}
+
+.bereich {
+	width: 7.5rem;;
+}
+
+.bereich svg {
+	width: 7.5rem;
+	/*transition: fill .3s ease;*/
+}
+
+.bereich p {
+	margin: 1rem 0 2rem 0;
+}
+
+.bereich .metall {
+	fill: #3498DB;
+	color: #3498DB;
+}
+
+.bereich .holz {
+	fill: #C0392B;
+	color: #C0392B;
+}
+
+.bereich .textil {
+	fill: #8E44AD;
+	color: #8E44AD;
+}
+
+.bereich .elektronik {
+	fill: #00979C;
+	color: #00979C;
+}
+
+.bereich .siebdruck {
+	fill: #2ECC71;
+	color: #2ECC71;
+}
+
+.bereich .keramik {
+	fill: #F39C12;
+	color: #F39C12;
+}
+
+.bereich .repair {
+	fill: #ffe100;
+	color: #ffe100;
+}
+
+@media (hover: hover) {
+
+	.bereich svg, .bereich .metall, .bereich .holz, .bereich .textil, .bereich .elektronik, .bereich .siebdruck, .bereich .keramik {
+		fill: black;
+		transition: fill .3s ease;
+	}
+
+	.bereich p, .bereich .metall, .bereich .holz, .bereich .textil, .bereich .elektronik, .bereich .siebdruck, .bereich .keramik {
+		color: black;
+		transition: color .3s ease;
+	}
+
+	.bereich:hover .metall {
+		fill: #3498DB;
+		color: #3498DB;
+	}
+
+	.bereich:hover .holz {
+		fill: #C0392B;
+		color: #C0392B;
+	}
+
+	.bereich:hover .textil {
+		fill: #8E44AD;
+		color: #8E44AD;
+	}
+
+	.bereich:hover .elektronik {
+		fill: #00979C;
+		color: #00979C;
+	}
+
+	.bereich:hover .siebdruck {
+		fill: #2ECC71;
+		color: #2ECC71;
+	}
+
+	.bereich:hover .keramik {
+		fill: #F39C12;
+		color: #F39C12;
+	}
+}
+
+@media (max-width: 850px) {
+
+	#bereiche-icons {
+		flex-wrap: wrap;
+	}
+
+	.bereich svg {
+		width: 6.5rem;
+	}
+}
+
+/*--- Termine ---*/
+
+.termin {
+	display: flex;
+	width: 50rem;
+	max-width: 95vw;
+	margin: 3rem auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.datum {
+	border-radius: 50%;
+	width: 6rem;
+	height: 6rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ff615d;
+}
+
+.datum p, .datum strong {
+	color: white;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0;
+	line-height: 1;
+}
+
+.metall .datum{
+	background-color: #3498DB;
+}
+
+.holz .datum{
+	background-color: #C0392B;
+}
+
+.textil .datum{
+	background-color: #8E44AD;
+}
+
+.elektronik .datum{
+	background-color: #00979C;
+}
+
+.siebdruck .datum{
+	background-color: #2ECC71;
+}
+
+.keramik .datum{
+	background-color: #F39C12;
+}
+
+.inhalt {
+	width: calc(100% - (6rem + 2rem));
+}
+
+.inhalt h3, .inhalt p, .inhalt hr {
+	margin: 0;
+	text-align: left;
+}
+
+.inhalt hr {
+	margin: 0.5rem 0;
+}
+
+@media (max-width: 550px) {
+	.termin {
+		flex-direction: column;
+		margin: 4rem auto;
+	}
+
+	.datum {
+		width: 90vw;
+		border-radius: 0rem;
+		flex-direction: row;
+		height: 4rem;
+		align-items: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.datum strong {
+		margin: 0 .5rem;
+	}
+
+	.datum strong:after {
+		content: "."
+	}
+
+	.inhalt {
+		width: 90vw;
+	}
+}
+
+/*--- Team ---*/
+
+#side {
+	overflow-y: hidden;
+	overflow-x: scroll;
+	width: 100%;
+}
+
+#team-mitglieder {
+	width: calc(20rem * 9);
+	height: 40rem;
+}
+
+.mitglied {
+	width: 20rem;
+	height: 40rem;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: #ff615d;
+}
+
+.mitglied:nth-child(odd) {
+	background-color: white;
+}
+
+.bild {
+	width: 20rem;
+	height: 25rem;
+}
+
+.bild img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.mitglied p {
+	text-align: left;
+	margin: 1rem 1.5rem;
+}
+
+@media (max-width: 480px) {
+	#team-mitglieder {
+		width: calc(15rem * 9);
+		height: 36rem;
+	}
+
+	.mitglied {
+		width: 15rem;
+		height: 36rem;
+	}
+
+	.bild {
+		width: 15rem;
+		height: 20rem;
+	}
+
+	.mitglied p {
+		font-size: 0.9rem;
+		margin: 1rem 1rem;
+	}
+
+	.mitglied strong {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	#team-mitglieder {
+		width: calc(15rem * 9);
+		height: 31rem;
+	}
+
+	.mitglied {
+		width: 15rem;
+		height: 31rem;
+	}
+
+	.bild {
+		width: 15rem;
+		height: 15rem;
+	}
+
+}
+
+/*--- Sponsoren ---*/
+
+#sponsoren-logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
+#sponsoren-logos div {
+	display: inline-flex;
+	width: 12rem;
+	height: auto;
+	margin: 1rem 2rem;
+}
+
+#sponsoren-logos img {
+	width: 100%;
+}
+
+@media (max-width: 600px) {
+
+	#sponsoren-logos div {
+		margin: 1rem 1rem;
+		width: 8rem;
+	}
+}
+
+/*--- Kontakt ---*/
+
+#map-wrap {
+	width: 70rem;
+	max-width: 90%;
+	margin: 4rem auto;
+	display: flex;
+}
+
+#kontakt a {
+	color: #ff615d;
+}
+
+#map-wrap p:first-child {
+	text-align: left;
+}
+
+#osm-map {
+	height: 30rem;
+	width: 50%;
+	z-index: 1;
+}
+
+#kontaktdaten {
+	width: 50%;
+}
+
+@media (max-width: 700px) {
+	#map-wrap {
+		flex-direction: column;
+	}
+
+	#osm-map, #kontaktdaten {
+		width: 90vw;
+		height: 50vh;
+	}
+
+	#kontaktdaten {
+		margin-top: 5rem;
+		height: auto;
+	}
+}
+
+
+/*--- Footer ---*/
+
+footer {
+	background-color: black;
+	color: white;
+	height: 9em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding: 0 1.5em;
+}
+
+footer p, footer a {
+	color: white;
+	margin: 0 0.5em;
+}
+
+footer .social {
+	display: flex;
+}
+
+footer .links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+@media (max-width: 414px) {
+	footer .social {
+		flex-direction: column;
+		align-items: center;
+	}
+}
