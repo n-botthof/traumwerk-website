@@ -287,6 +287,11 @@ nav #burger-menu {
 	color: #ffe100;
 }
 
+.bereich .repaircafe {
+	fill: #ffe100;
+	color: #ffe100;
+}
+
 @media (hover: hover) {
 
 	.bereich svg, .bereich .metall, .bereich .holz, .bereich .textil, .bereich .elektronik, .bereich .siebdruck, .bereich .keramik {
@@ -392,6 +397,10 @@ nav #burger-menu {
 
 .keramik .datum{
 	background-color: #F39C12;
+}
+
+.repaircafe .datum{
+	background-color: #ffe100;
 }
 
 .inhalt {
