@@ -490,7 +490,7 @@ nav #burger-menu {
 
 @media (max-width: 480px) {
 	#team-mitglieder {
-		width: calc(15rem * 9);
+		width: calc(15rem * 13);
 		height: 36rem;
 	}
 
@@ -516,7 +516,7 @@ nav #burger-menu {
 
 @media (max-width: 480px) {
 	#team-mitglieder {
-		width: calc(15rem * 9);
+		width: calc(15rem * 13);
 		height: 31rem;
 	}
 
